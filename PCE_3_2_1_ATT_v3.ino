@@ -86,6 +86,7 @@ void loop() {
   } else {
     a = NAN;
     Serial.println("Erro ao obter a pressão atual");
+     return;
   }
 
   mpu.getAcceleration(&ax, &ay, &az);
